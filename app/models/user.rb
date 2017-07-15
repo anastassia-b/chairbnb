@@ -44,4 +44,5 @@ class User < ApplicationRecord
     while User.find_by(session_token: self.session_token)
       self.session_token = new_session_token
     end
+  end
 end
