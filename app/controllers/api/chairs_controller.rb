@@ -18,4 +18,5 @@ class Api::ChairsController < ApplicationController
 
   def chair_params
     params.require(:chair).permit(:lat, :lng, :description)
+  end
 end
