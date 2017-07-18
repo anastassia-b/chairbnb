@@ -6,11 +6,11 @@ import ChairMap from './chair_map';
 const Search = ({ chairs }) => (
   <div className="user-pane">
     <div className="left-half">
-      Map goes here
+      <ChairMap chairs={chairs} />
     </div>
     <div className="right-half">
       Filter form goes here
-      <ChairIndex chairs={chairs} />
+      <ChairIndex chairs={chairs} singleChair={false} />
     </div>
   </div>
 );
