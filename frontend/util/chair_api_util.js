@@ -12,3 +12,11 @@ export const fetchChair = id => (
     url: `api/benches/${id}`
   })
 );
+
+export const createChair = data => {
+  $.ajax({
+    method: 'POST',
+    url: 'api/chairs',
+    data
+  });
+};

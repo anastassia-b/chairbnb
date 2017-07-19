@@ -24,3 +24,9 @@ export const fetchChair = id => dispatch => (
     dispatch(receiveChair(chair))
   ))
 );
+
+export const createChair = chair => dispatch => (
+  APIUtil.createChair(chair).then(chair => (
+    dispatch(receiveChair(chair))
+  ))
+);
