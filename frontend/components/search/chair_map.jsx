@@ -47,7 +47,7 @@ class ChairMap extends React.Component {
 
   handleClick(coords) {
    this.props.history.push({
-     pathname: "benches/new",
+     pathname: "chairs/new",
      search: `lat=${coords.lat}&lng=${coords.lng}`
    });
  }

@@ -118,3 +118,5 @@ class ChairForm extends React.Component{
     );
   }
 }
+
+export default withRouter(ChairForm);

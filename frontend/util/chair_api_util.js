@@ -13,10 +13,10 @@ export const fetchChair = id => (
   })
 );
 
-export const createChair = data => {
+export const createChair = data => (
   $.ajax({
     method: 'POST',
     url: 'api/chairs',
     data
-  });
-};
+  })
+);
