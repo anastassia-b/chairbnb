@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.fetchChairs = fetchChairs;
 
+  window.dispatch(fetchChairs());
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={ store }/>, root);
 });

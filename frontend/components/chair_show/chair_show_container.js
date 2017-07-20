@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchChair } from '../../actions/chiar_actions';
+import { fetchChair } from '../../actions/chair_actions';
 import { selectChair } from '../../reducers/selectors';
 import ChairShow from './chair_show';
 

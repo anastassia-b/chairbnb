@@ -9,7 +9,7 @@ export const fetchChairs = () => {
 export const fetchChair = id => (
   $.ajax({
     method: 'GET',
-    url: `api/benches/${id}`
+    url: `api/chairs/${id}`
   })
 );
 

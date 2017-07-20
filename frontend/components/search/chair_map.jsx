@@ -30,8 +30,8 @@ class ChairMap extends React.Component {
 
   componentDidUpdate() {
     if (this.props.singleChair) {
-      const targetChairKey = Object.keys(this.props.benches)[0];
-      const targetChair = this.props.benches[targetChairKey];
+      const targetChairKey = Object.keys(this.props.chairs)[0];
+      const targetChair = this.props.chairs[targetChairKey];
       this.MarkerManager.updateMarkers([targetChair]);
     } else {
       this.MarkerManager.updateMarkers(this.props.chairs);
