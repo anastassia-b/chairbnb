@@ -14,7 +14,7 @@ export const receiveChair = chair => ({
   chair
 });
 
-export const recieveReview = review => ({
+export const receiveReview = review => ({
   type: RECEIVE_REVIEW,
   review
 });
