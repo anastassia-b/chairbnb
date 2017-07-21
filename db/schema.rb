@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 20170721065632) do
   create_table "reviews", force: :cascade do |t|
     t.string "body", default: "", null: false
     t.integer "rating", null: false
-    t.integer "bench_id"
+    t.integer "chair_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["bench_id"], name: "index_reviews_on_bench_id"
+    t.index ["chair_id"], name: "index_reviews_on_chair_id"
   end
 
   create_table "users", force: :cascade do |t|

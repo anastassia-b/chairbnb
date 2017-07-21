@@ -3,10 +3,10 @@ class CreateReviews < ActiveRecord::Migration[5.1]
     create_table :reviews do |t|
       t.string :body, null: false, default: ""
       t.integer :rating, null: false
-      t.integer :bench_id
+      t.integer :chair_id, null: false
       t.timestamps null: false
     end
 
-    add_index :reviews, :bench_id
+    add_index :reviews, :chair_id
   end
 end
