@@ -10,7 +10,6 @@ const Search = ({ chairs }) => (
       <ChairMap chairs={chairs} />
     </div>
     <div className="right-half">
-      Filter form goes here
       <ChairIndex chairs={chairs} singleChair={false} />
     </div>
   </div>
