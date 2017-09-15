@@ -83,3 +83,11 @@ header {
   overflow-y: scroll;
   padding: 0 20px 20px 20px;
 }
+
+.left-half {
+  margin: 0px 0px 0px 40px;
+}
+
+.single-chair-show {
+  margin: 0px 0px 0px 40px;
+}
